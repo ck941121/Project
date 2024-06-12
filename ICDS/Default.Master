@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="ICDS.Default" %>
+
+<%@ Register Src="~/Header.ascx" TagName="MyHeader" TagPrefix="aa" %>
+<%@ Register Src="~/Footer.ascx" TagName="MyFooter" TagPrefix="aa" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <aa:MyHeader ID="h1" runat="server"></aa:MyHeader>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td><aa:MyFooter ID="f1" runat="server"></aa:MyFooter></td>
+                </tr>
+            </table>
+
+        </div>
+    </form>
+</body>
+</html>
